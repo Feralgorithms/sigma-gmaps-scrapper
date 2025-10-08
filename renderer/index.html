@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sigma Google Maps Scraper</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      font-family: 'Menlo', 'Consolas', monospace;
+      padding: 30px;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #f0f0f0;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    input,
+    button {
+      padding: 8px 12px;
+      margin: 6px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input {
+      background: #222;
+      color: #fff;
+      border: 1px solid #444;
+    }
+
+    button {
+      cursor: pointer;
+      background: #444;
+      color: #fff;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #666;
+    }
+
+    #saveButtons {
+      margin-top: 10px;
+    }
+
+    #saveButtons button {
+      margin-right: 5px;
+    }
+
+    /* ======= Terminal Style ======= */
+    .terminal {
+      width: 90%;
+      max-width: 900px;
+      background: #111;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+      margin-top: 25px;
+    }
+
+    .terminal-header {
+      background: #2b2b2b;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .terminal-btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .close {
+      background: #ff5f57;
+    }
+
+    .minimize {
+      background: #ffbd2e;
+    }
+
+    .maximize {
+      background: #28c940;
+    }
+
+    pre {
+      background: #000;
+      color: #00ff9d;
+      padding: 18px;
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.5;
+      overflow-y: auto;
+      max-height: 450px;
+      text-shadow: 0 0 5px rgba(0, 255, 150, 0.4);
+    }
+
+    #clearFilesBtn {
+      background: #f44;
+      color: #fff;
+    }
+
+    #clearFilesBtn:hover {
+      background: #c22;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 20px;">
+    <img id="logo" src="sigma-logo.png" alt="Sigma Logo" style="width: 100px; height: 100px; object-fit: contain;">
+    <h1
+      style="margin: 0; font-size: 26px; font-weight: 500; color: #f0f0f0; letter-spacing: 0.5px; text-align: center;">
+      Sigma Google Maps Scraper
+    </h1>
+  </div>
+
+  <div>
+    <input type="text" id="query" placeholder="Cari apa...">
+    <input type="number" id="maxResults" value="10">
+    <button id="startBtn">🚀 Mulai Scrape</button>
+  </div>
+
+  <div id="saveButtons" style="display:none;">
+    <button id="saveJsonBtn">💾 Simpan JSON</button>
+    <button id="saveCsvBtn">💾 Simpan CSV</button>
+    <button id="saveReportBtn">💾 Simpan Report</button>
+    <button id="clearFilesBtn">🗑️ Hapus File Lokal</button>
+  </div>
+
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="terminal-btn close"></span>
+      <span class="terminal-btn minimize"></span>
+      <span class="terminal-btn maximize"></span>
+    </div>
+    <pre id="output"></pre>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+
+</html>

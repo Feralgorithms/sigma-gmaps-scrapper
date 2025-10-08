@@ -1,0 +1,43 @@
+{
+  "name": "sigma-gmaps-scrapper",
+  "version": "1.0.0",
+  "description": "A desktop Google Maps scraper built with Puppeteer + Electron",
+  "main": "main.js",
+  "author": "Ferdy",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "puppeteer": "^24.23.0"
+  },
+  "devDependencies": {
+    "electron": "^38.2.1",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.gmaps.scrapper",
+    "productName": "Sigma GMaps Scrapper",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "scraper.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "utils/**/*",
+      "assets/**/*",
+      "renderer/**/*",
+      "node_modules/**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!node_modules/.bin"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  }
+}
