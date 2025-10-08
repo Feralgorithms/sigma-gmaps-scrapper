@@ -23,7 +23,7 @@ Easily scrape business data from Google Maps and export it in CSV/JSON.
 
 - Scrape business information from Google Maps  
 - Export scraped data as CSV or JSON  
-- Desktop app for **Windows**, **macOS**, and **Linux**  
+- Desktop app for **Windows**
 - Uses **Electron** and **Puppeteer** for automation  
 
 ---
