@@ -1,4 +1,4 @@
-# 🚀 Sigma GMaps Scrapper
+# 🚀 Sigma GMaps Scraper
 
 A desktop Google Maps scraper built with **Puppeteer + Electron**.  
 Easily scrape business data from Google Maps and export it in CSV/JSON.
@@ -80,7 +80,7 @@ npm run build
 
 Download the latest installer from GitHub Release:  
 
-[Download Sigma GMaps Scrapper v1.0.0](https://github.com/Feralgorithms/sigma-gmaps-scrapper/releases/download/v1.0.0/Sigma.GMaps.Scrapper.Setup.1.0.0.exe)
+[Download Sigma GMaps Scrapper v1.0.0](https://github.com/Feralgorithms/sigma-gmaps-scrapper/releases/download/v1.0.0/Sigma.GMaps.Scraper.Setup.1.0.0.exe)
 
 1. Double-click the \`.exe\` file to install.  
 2. Follow the installer instructions.  
