@@ -41,8 +41,8 @@ Easily scrape business data from Google Maps and export it in CSV/JSON.
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/Feralgorithms/sigma-gmaps-scrapper.git
-cd sigma-gmaps-scrapper
+git clone https://github.com/Feralgorithms/sigma-gmaps-scraper.git
+cd sigma-gmaps-scraper
 ```
 
 2. Install dependencies:
@@ -80,7 +80,7 @@ npm run build
 
 Download the latest installer from GitHub Release:  
 
-[Download Sigma GMaps Scrapper v1.0.0](https://github.com/Feralgorithms/sigma-gmaps-scrapper/releases/download/v1.0.0/Sigma.GMaps.Scraper.Setup.1.0.0.exe)
+[Download Sigma GMaps Scrapper v1.0.0](https://github.com/Feralgorithms/sigma-gmaps-scraper/releases/download/v1.0.0/Sigma.GMaps.Scraper.Setup.1.0.0.exe)
 
 1. Double-click the \`.exe\` file to install.  
 2. Follow the installer instructions.  
@@ -100,7 +100,7 @@ Download the latest installer from GitHub Release:
 ## 🗂 File Structure
 
 ```
-sigma-gmaps-scrapper/
+sigma-gmaps-scraper/
 │
 ├─ main.js             # Main Electron process
 ├─ preload.js          # Preload script
